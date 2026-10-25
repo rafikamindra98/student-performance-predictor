@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Large Datasets
+*.zip
+Student_performance_data _.csv
+student_performance.csv
+
+# Allow sample artifact csv
+!student_performance_artifacts/*.csv

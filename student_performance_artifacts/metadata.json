@@ -1,0 +1,40 @@
+{
+    "project": "Student Performance Predictor & Explainable AI",
+    "author": "Rafi Kamindra",
+    "dataset": "rabieelkharoua/students-performance-dataset",
+    "champion_model": "Gradient Boosting (XGBoost Regressor)",
+    "hyperparameters": {
+        "n_estimators": 100,
+        "max_depth": 4,
+        "learning_rate": 0.08,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+    },
+    "metrics_holdout": {
+        "r2_score": 0.9458877968330228,
+        "rmse": 0.2115352112908575,
+        "mae": 0.16655211587887692
+    },
+    "baseline_gpa_mean": 1.9011193566234508,
+    "grade_mapping": {
+        "A": "GPA >= 3.5",
+        "B": "3.0 <= GPA < 3.5",
+        "C": "2.5 <= GPA < 3.0",
+        "D": "2.0 <= GPA < 2.5",
+        "F": "GPA < 2.0 (At-Risk)"
+    },
+    "features": [
+        "Age",
+        "Gender",
+        "Ethnicity",
+        "ParentalEducation",
+        "StudyTimeWeekly",
+        "Absences",
+        "Tutoring",
+        "ParentalSupport",
+        "Extracurricular",
+        "Sports",
+        "Music",
+        "Volunteering"
+    ]
+}
